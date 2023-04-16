@@ -24,7 +24,17 @@ iframe {
 &lt;/style&gt;</div>
     </div>
     </div>
-    <video preload="none" id="player" autoplay controls crossorigin></video>
+    <video id="player" autoplay controls crossorigin>
+      <track id="subtitleTrack" kind="captions" label="English" srclang="en" default />
+    </video
+      <div id="quality-selector" class="plyr__menu">
+    <button class="plyr__control plyr__control--overlaid" type="button" aria-haspopup="true" aria-controls="plyr-quality-selector">
+        Quality
+    </button>
+    <div id="plyr-quality-selector" class="plyr__menu__container" hidden>
+        <div class="plyr__menu__list"></div>
+    </div>
+</div>
 </body>
 </html>
 
