@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloovies</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css">
+</head>
+<body>
+    <div id="content">
+    <h1 id="blazer">Official <span>Blazer</span> Service</h1>
+    <div style="word-wrap: break-word; white-space: pre-wrap;" class="doc"><p>Welcome to the Bloovies Embeder 🎉<br>        This site if for embeding movies into sites, it uses the search params <span class="two">?movie=</span> here is an example <span id="location">watch-puss-in-boots-the-last-wish-91342</span>
+        and uses an ID system for proper embeding from the site FlixHQ you can get your movie ID's from (<a href="https://flixhq.to/" target="_blank">https://flixhq.to/</a>), 
+        (Ex. <a href="https://flixhq.to/movie/watch-puss-in-boots-the-last-wish-91342">https://flixhq.to/movie/watch-puss-in-boots-the-last-wish-91342</a>) The ID is the "<span class="three">watch-puss-in-boots-the-last-wish-91342</span>"
+                    Below is a code snippet which will help you get started, it allows you to iframe a movie!</p>
+        <div class="code-block">&lt;iframe src=&quot;https://wxample.org/?movie=watch-puss-in-boots-the-last-wish-91342&quot;&gt;&lt;/iframe&gt;
+&lt;style&gt;
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+&lt;/style&gt;</div>
+    </div>
+    </div>
+    <video preload="none" id="player" autoplay controls crossorigin></video>
+</body>
+</html>
+
+<script src="https://cdn.plyr.io/1.8.2/plyr.js"></script>
+<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
+
+<script src="script.js"></script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600&display=swap');
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  body {
+      background-color: #121212;
+      color:#fff;
+  }
+  #content {
+      padding: 1vw 0 0 2vw;
+  }
+  .doc {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .links {
+    margin-top: -2.5vw;
+  }
+  .code-block {
+    background-color: #323235;
+    color:#f6f8fa;
+    width: max-content;
+    padding: .75vw;
+    border-radius: .5vw;
+    font-size: .8vw;
+    font-family: Consolas, monospace;
+    margin-left: 5vw;
+    margin-top: -1.5vw;
+  }
+  .keyword {
+    color: #add8e6;
+  }
+  .string {
+    color: #ffa07a;
+  }
+  .number {
+    color: #98fb98;
+  }
+  .comment {
+    color: #696969;
+  }
+  .doc p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }
+  h2 {
+    font-weight: 600;
+  }
+  h1 {
+      font-size: 2.5vw;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: .2vw;
+  }
+  h1 span {
+      text-decoration: none;
+      color: #2c7ffc;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2.8vw;
+  }
+  .link {
+    font-size: 1vw;
+  }
+  a {
+      color: rgb(18, 128, 231);
+  }
+  p a:nth-of-type(2) {
+      color: #f7f446;
+  }
+  span {
+      color: rgb(255, 142, 36);
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  span.two {
+      color: #51e94c;
+      text-decoration: none;
+      cursor: auto;
+  }
+  span.three {
+      text-decoration: none;
+      color: rgb(255, 55, 55);
+      cursor:auto;
+  }
+  #player {
+      width: 100%;
+      height: 100vh;
+      display: none;
+  }
+  
+</style>
